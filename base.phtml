@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+  <title>Online Voting System</title>
+  <!-- Bootstrap core CSS -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/mycss.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class= "col-md-1">
+
+  </div>
+
+  <div class = "col-md-10">
+
+    <div class="row">
+
+      <div class="jumbotron">
+        <div class="container text-center">
+  				<h1 id="head1"><i>ONLINE VOTING SYSTEM OF GRENADA</i></h1>
+  				<p><i>Be a part of CHANGE!</i><br>
+            		   <i>Exercise your RIGHTS!</i><br>
+           		   <i>MAKE GRENADA GREAT AGAIN!!</i></p>
+
+            <div class="container">
+              <div class="col-md-3"></div>
+
+              <div class="col-md-6">
+           			<button id="vote" class="btn btn-lg btn-block btn-info">Vote</button>
+              </div>
+
+              <div class="col-md-3"></div>
+            </div>
+
+            <p id="small">If you are not already registered.<a id="register">Register now</a></p>
+
+  			</div>
+      </div>
+
+    </div>
+
+    <div class="row" id="L">
+
+      <form class="form-horizontal">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Login</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="user">User ID</label>
+            <div class="col-md-4">
+              <input id="user" name="user" type="text" placeholder="Enter ID Here" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="pass">Password</label>
+            <div class="col-md-4">
+              <input id="pass" name="pass" type="password" placeholder="Enter Password Here" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="saveL"></label>
+            <div class="col-md-4">
+              <button id="saveL" name="saveL" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+    </div>
+
+    <div class="row" id="R">
+
+      <form class="form-horizontal">
+          <fieldset>
+
+          <!-- Form Name -->
+          <legend>Register</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="fname">First Name</label>
+            <div class="col-md-4">
+            <input id="fname" name="fname" type="text" placeholder="Enter First Name Here" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="lname">Last Name</label>
+            <div class="col-md-4">
+            <input id="lname" name="lname" type="text" placeholder="Enter Last Name Here" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="N_ID_N">National ID Number</label>
+            <div class="col-md-4">
+            <input id="N_ID_N" name="N_ID_N" type="text" placeholder="Enter National ID Number" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="userR">User Name</label>
+            <div class="col-md-4">
+            <input id="userR" name="userR" type="text" placeholder="Enter a Username" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="pass">Enter Password </label>
+            <div class="col-md-4">
+              <input id="pass" name="pass" type="password" placeholder="Enter a Password" class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="passConf">Confirm Password</label>
+            <div class="col-md-4">
+              <input id="passConf" name="passConf" type="password" placeholder="Confirm Your Password" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="saveL"></label>
+            <div class="col-md-4">
+              <button id="saveL" name="saveL" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
+
+    </div>
+
+    <div class="row top-buffer" id="results">
+      <div class="container text-center">
+      <h1><strong>Election Results will be available in <span id="time"></span> minutes</strong></h1>
+      <button class="btn btn-lg btn-primary"> View Results</button>
+      </div>
+    </div>
+
+    <div class="row top-buffer" id="pre_footer">
+      <a href="" id="logo"><img class="img-responsive" src="images/Flag_Grenada.gif"></a>
+      <p id="logo_n">This System was brought to you by<span id="signature"> G.O.V</span>, Grenadian Online Voting.</p>
+    </div>
+
+
+
+
+    <footer class="footer">
+      <p id="ftxt">COMP 3550 Group Project</p>
+    </footer>
+
+  </div>
+
+
+
+  <div class="col-md-1">
+
+  </div>
+
+
+  <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>

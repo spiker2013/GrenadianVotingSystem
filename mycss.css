@@ -1,0 +1,105 @@
+body{
+  opacity: 0.97;
+  background-image: url("images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-btn{
+  font-size: 20px;
+}
+
+.jumbotron{
+  margin-top: 10px;
+  border-radius: 5px;
+  background-image:linear-gradient(to bottom, rgb(198, 20, 40) 0%, #e9cccc 100%);
+	border-color: #dfdfdf;
+}
+
+.top-buffer{
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.btn-info:hover, .btn-info.hover {
+	background-color: #c1263c;
+	border-color: #c0253c;
+}
+
+.btn-info.focus, .btn-info:focus{
+	background-color: #c1263c;
+	border-color: #c1263c;
+	outline-color:#c1263c;
+}
+
+.btn-info.active,
+.btn-info:active,
+.btn-info:active:focus,
+.open>.dropdown-toggle.btn-inf {
+	background-color: #c4273c;
+	border-color: #c4273c;
+	outline-color:#c4273c;
+}
+
+.btn-info:focus:active{
+  background-color: #c32136;
+}
+
+.btn-info{
+	background-image: linear-gradient(#c4273c, #c32136, #c32337);
+	border-color: #c32136;
+}
+
+
+#head1{
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+#logo{
+  float: left;
+}
+
+#logo_n{
+  float: left;
+  font-size: 25px;
+  font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+}
+
+#signature{
+  /*font-size: 25px;
+  float: left;*/
+  font-family: "Brush Script MT",cursive;
+}
+
+#register{
+  cursor: pointer;
+}
+
+#small{
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+#L{
+  background-image: linear-gradient(to bottom, #e9cccc 0%, rgba(23, 76, 68, 0.75) 100%);
+  border-radius: 5px;
+}
+
+#R{
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom, #e9cccc 0%, rgba(23, 76, 68, 0.75) 100%);
+  border-radius: 5px;
+}
+
+#ftxt{
+  margin: 0 0 10px;
+}
+
+#results{
+  background-image: linear-gradient(to bottom, rgba(23, 76, 68, 0.75) 0%, rgb(162, 141, 38) 100%);
+  padding-bottom: 10px;
+}
+
+#pre_footer{
+  background-image:linear-gradient(to bottom, rgb(162, 141, 38) 0%, rgb(221, 192, 17) 100%);
+}
